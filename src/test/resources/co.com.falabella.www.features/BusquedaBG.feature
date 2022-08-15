@@ -7,14 +7,20 @@ Feature: Busqueda de 3 productos
 
   Scenario: Buscar productos en falabella
     When quiero buscar un producto
-      | Producto            |
+      | Producto          |
       | Pincho de Mazorca |
     Then valido que me haya traido productos relacionado
+      | Validar           |
+      | Pincho de Mazorca |
     When quiero buscar un producto
-      | Producto    |
-      | Juego De Mesa Fan Hasbro Gaming Risk|
+      | Producto                             |
+      | Risk Hasbro |
     Then valido que me haya traido productos relacionado
+      | Validar                              |
+      | Juego De Mesa Fan Hasbro Gaming Risk |
     When quiero buscar un producto
-      | Producto    |
-      | Disfraz para Perro de HotDog|
+      | Producto                     |
+      | Disfraz para Perro de HotDog |
     Then valido que me haya traido productos relacionado
+      | Validar                      |
+      | Disfraz para Perro de HotDog |
