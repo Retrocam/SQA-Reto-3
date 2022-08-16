@@ -30,7 +30,6 @@ public class ClickRandom implements Interaction {
         }catch (InterruptedException e){
             e.printStackTrace();
         }
-
     }
     public static Performable enCategoria(){
         return Instrumented.instanceOf(ClickRandom.class).withProperties();

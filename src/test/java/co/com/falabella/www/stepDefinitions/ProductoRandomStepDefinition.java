@@ -1,6 +1,7 @@
 package co.com.falabella.www.stepDefinitions;
 
 import co.com.falabella.www.tasks.ProductoAleatorio;
+import co.com.falabella.www.tasks.ValidarRandom;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -20,5 +21,6 @@ public class ProductoRandomStepDefinition {
     }
     @Then("^selecciono un producto aleatorio$")
     public void seleccionoUnProductoAleatorio() {
+        OnStage.theActorInTheSpotlight().attemptsTo(ValidarRandom.enPDPFalabella());
     }
 }
